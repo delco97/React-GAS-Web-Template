@@ -7,4 +7,6 @@ const server = new Server({
   allowedDevelopmentDomains: `https://localhost:${PORT}`,
 });
 
+//This object, thanks to gas-client package, helps to more easily call server-side functions using promises.
+// See https://www.npmjs.com/package/gas-client for more info
 export default server;
