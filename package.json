@@ -1,21 +1,20 @@
 {
   "name": "react-google-apps-script",
   "version": "2.0.0",
-  "description": "Starter project for using React with Google Apps Script",
+  "description": "Starter project for using React with Google Apps Script Web app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/enuchi/React-Google-Apps-Script.git"
+    "url": "https://github.com/delco97/React-GAS-Web-Template"
   },
   "scripts": {
     "test": "test",
     "login": "clasp login",
-    "setup": "rimraf .clasp.json && clasp create --type sheets --title \"My React Project\" --rootDir ./dist",
-    "open": "clasp open --addon",
+    "open": "clasp open --webapp",
     "setup:https": "mkdirp certs && mkcert -key-file ./certs/key.pem -cert-file ./certs/cert.pem localhost 127.0.0.1",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build": "cross-env NODE_ENV=production webpack",
-    "deploy:dev": "rimraf dist && npm run build:dev && npx clasp push",
-    "deploy": "rimraf dist && npm run build && npx clasp push",
+    "deploy:dev": "rimraf dist && npm run build:dev && npx clasp push -f",
+    "deploy": "rimraf dist && npm run build && npx clasp push -f",
     "serve": "cross-env NODE_ENV=development webpack-dev-server",
     "start": "npm run deploy:dev && npm run serve"
   },
@@ -26,7 +25,7 @@
     "script",
     "sheets"
   ],
-  "author": "Elisha Nuchi",
+  "author": "Andrea Del Corto",
   "license": "MIT",
   "engines": {
     "node": ">=10.0.0",

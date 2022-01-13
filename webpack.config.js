@@ -43,22 +43,10 @@ const devDialogEntry = './dev/index.js';
 // define client entry points and output names
 const clientEntrypoints = [
   {
-    name: 'CLIENT - Dialog Demo',
-    entry: './src/client/dialog-demo/index.js',
-    filename: 'dialog-demo', // we'll add the .html suffix to these
-    template: './src/client/dialog-demo/index.html',
-  },
-  {
-    name: 'CLIENT - Dialog Demo Bootstrap',
-    entry: './src/client/dialog-demo-bootstrap/index.js',
-    filename: 'dialog-demo-bootstrap',
-    template: './src/client/dialog-demo-bootstrap/index.html',
-  },
-  {
-    name: 'CLIENT - Sidebar About Page',
-    entry: './src/client/sidebar-about-page/index.js',
-    filename: 'sidebar-about-page',
-    template: './src/client/sidebar-about-page/index.html',
+    name: 'CLIENT - Demo Bootstrap',
+    entry: './src/client/demo-bootstrap/index.js',
+    filename: 'demo-bootstrap',
+    template: './src/client/demo-bootstrap/index.html',
   },
 ];
 
@@ -142,7 +130,7 @@ const clientConfig = {
 
 // DynamicCdnWebpackPlugin settings
 // these settings help us load 'react', 'react-dom' and the packages defined below from a CDN
-// see https://github.com/enuchi/React-Google-Apps-Script#adding-new-libraries-and-packages
+// see https://github.com/delco97/React-GAS-Web-Template#adding-packages
 const DynamicCdnWebpackPluginConfig = {
   // set "verbose" to true to print console logs on CDN usage while webpack builds
   verbose: false,
