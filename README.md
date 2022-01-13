@@ -324,7 +324,7 @@ All available methods from the Google Apps Script API are shown with full defini
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@enuchi](https://github.com/delco97) - Creator and maintainer
+- [@delco97](https://github.com/delco97) - Creator and maintainer
 
 See the list of [contributors](https://github.com/delco97/React-GAS-Web-Template/contributors) who participated in this project.
 
